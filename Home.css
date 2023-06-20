@@ -1,0 +1,253 @@
+body {
+    background-color: rgb(14,17,23);
+    color: white;
+}
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul {
+    flex: 1;
+    text-align: left;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    justify-content: space-evenly;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+nav ul li a button {
+    background-color: rgb(14,17,23);
+    border: none;
+    color: #fff;
+    width: 20vh;
+    height: 40px;
+    border-radius: 5px;
+    font-size: large;
+}
+nav ul li a button:hover {
+    color: #0ef;
+}
+.img {
+    width: 600px;
+    height: 300px;
+}
+.title {
+    border: solid 1px black;
+    height: 60px;
+    width: 50vh;
+    border-radius: 5px;
+    background-color: rgb(14,17,23);
+    color: #fff; 
+    
+}
+.title:hover {
+    color: #0ef;
+}
+.title a {
+    text-decoration: none;
+    color:#fff;
+}
+.Second {
+    display: flex;
+    justify-content: space-evenly;
+}
+.Second img {
+    border: solid 2px rgb(14,17,23);
+    border-radius: 5px;
+    
+}
+/* .body {
+    margin: 0;
+    padding: 0;
+    font-size: 33.5%;
+    background-color: rgb(14,17,23);
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.grid {
+    display: grid;
+    
+    width: 700rem;
+    height: 25rem;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit,minmax(8rem,1fr));
+    align-items: center;
+    
+}
+.grid-item {
+    background-color: #eee;
+    width: 70%;
+    height: 100%;
+    border: solid 2px #0d0d0d;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.grid-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0,0,0,1);
+}
+.card-image {
+    display: inline-block;
+    width: 55%;
+    height: 40%;
+    object-fit: cover;
+}
+.card-content {
+    padding: 0.1rem;
+    
+
+}
+
+.card-header {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 0.1rem;
+}
+.card-text {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #000;
+    margin-bottom: 2.5rem;
+} */
+
+* {
+    margin: 0;
+    padding: 0px;
+    
+    
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.slide-show {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14,17,23);
+}
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    background-color: rgb(14,17,23);
+    padding: 40px;
+}
+.slide-content {
+    
+    margin: 0 40px;
+    background: rgb(14,17,23);
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card {
+    width: 320px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+
+}
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+    
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 3px;
+}
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+.name {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+}
+.description {
+    font-size: 17px;
+    color: #707070;
+    text-align: center;
+}
+.swiper-navBtn {
+    color: #6e93f7;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn:hover {
+    color: #4070f4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+    font-size: 40px;
+}
+.swiper-button-next {
+    right: 0;
+}
+.swiper-button-prev {
+    left: 0;
+}
+.swiper-pagination.bullet {
+    background-color: #6e93f7;
+    opacity: 1;
+}
+.swiper-pagination.bullet-active {
+    background-color: #4070f4;
+}
