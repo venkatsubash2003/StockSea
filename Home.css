@@ -1,7 +1,32 @@
+
 body {
     background-color: rgb(14,17,23);
     color: white;
 }
+.entire {
+    min-height: auto;
+}
+.heading {
+    font-size: 72px;
+            font-weight: 600;
+            font-family: 'Mona Sans', 'Mona Sans Header Fallback', -apple-system,
+              BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+              'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+            padding: 2rem;
+            color-scheme: dark;
+            color: rgb(14,17,23);
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow{
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ccc, 0 0 40px #ccc, 0 0 50px #ccc, 0 0 60px #ccc, 0 0 70px #ccc;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #e5e5e5, 0 0 40px #e5e5e5, 0 0 50px #e5e5e5, 0 0 60px #e5e5e5, 0 0 70px #e5e5e5, 0 0 80px #e5e5e5;
+    }
+  }
 .hero {
     min-height: 100vh;
     width: 100%;
@@ -69,6 +94,9 @@ nav ul li a button:hover {
     border-radius: 5px;
     
 }
+.entire {
+    padding-left: 1rem;
+}
 /* .body {
     margin: 0;
     padding: 0;
@@ -131,6 +159,10 @@ nav ul li a button:hover {
     color: #000;
     margin-bottom: 2.5rem;
 } */
+.real-content {
+    display: flex;
+    flex-direction: column;
+}
 
 * {
     margin: 0;
@@ -218,14 +250,16 @@ nav ul li a button:hover {
     border: 4px solid #4070f4;
 }
 .name {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 500;
     color: #333;
 }
 .description {
-    font-size: 17px;
+    margin-top: 1rem;
+    font-size: 18px;
     color: #707070;
     text-align: center;
+    
 }
 .swiper-navBtn {
     color: #6e93f7;
